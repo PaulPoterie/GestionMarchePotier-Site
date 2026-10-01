@@ -10,7 +10,7 @@ Chaque push sur `main` déclenche le workflow de construction et de déploiement
 
 ## Relier le sous-domaine
 
-Adresse souhaitée : https://gestion-marche-potier.poterie-navarraise.info
+Adresse configurée : https://gestion-marche-potier.poterie-navarraise.info
 
 1. Retrouver le fournisseur qui gère la zone DNS de `poterie-navarraise.info`.
 2. Vérifier le domaine dans les paramètres Pages du compte GitHub avec l’enregistrement TXT fourni par GitHub ; conserver cet enregistrement.
@@ -29,7 +29,7 @@ Adresse souhaitée : https://gestion-marche-potier.poterie-navarraise.info
 
 Avec le workflow GitHub Actions utilisé ici, le domaine se configure dans les paramètres Pages ; aucun fichier CNAME n’est nécessaire dans les sources.
 
-La liaison du domaine dépend du fournisseur DNS, encore à préciser. Ne configurer le domaine personnalisé GitHub que lorsque la modification DNS peut être réalisée, pour éviter une redirection vers un sous-domaine non prêt.
+Configuration effectuée le 1er octobre 2026 : CNAME créé par le propriétaire chez o2switch et vérifié, domaine personnalisé enregistré dans GitHub Pages, certificat approuvé par GitHub et option Enforce HTTPS activée. La vérification TXT du domaine au niveau du compte GitHub reste une étape distincte, non effectuée ici.
 
 ## Retour arrière
 
