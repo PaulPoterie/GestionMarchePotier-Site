@@ -1,11 +1,13 @@
 """Build the static showcase with Python's standard library only."""
 from pathlib import Path
 import shutil
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'site'
 OUTPUT = ROOT / 'public'
 OUTPUT.mkdir(exist_ok=True)
+style_version = hashlib.sha256((SOURCE / 'style.css').read_bytes()).hexdigest()[:12]
 content = (SOURCE / 'accueil.html').read_text(encoding='utf-8')
 navigation = ''.join(f'<a href="#{anchor}">{label}</a>' for label, anchor in [
     ('Fonctionnalités', 'fonctionnalites'), ('Captures', 'captures'),
@@ -20,7 +22,7 @@ page = f'''<!doctype html>
 <title>Gestion Marché Potier — par Poterie Navarraise</title>
 <meta name="description" content="Organisez vos marchés potiers avec WordPress : éditions, candidatures, jury, historiques et galerie. Découvrez et téléchargez le plugin gratuit 0.19.3.">
 <meta name="theme-color" content="#93462f">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v={style_version}">
 </head>
 <body><a class="skip-link" href="#contenu">Aller au contenu</a>
 {header}<main id="contenu">{content}</main>{footer}
