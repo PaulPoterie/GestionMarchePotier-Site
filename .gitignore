@@ -1,0 +1,16 @@
+local-site/
+__pycache__/
+*.log
+
+
+# Ancienne version WordPress conservée uniquement en local
+theme/
+dist/
+reports/
+tools/build.py
+tools/setup-local.php
+tools/update-local-*.php
+# Résultat de construction
+public/
+.env
+.env.*
