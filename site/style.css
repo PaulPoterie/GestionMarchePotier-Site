@@ -17,3 +17,5 @@ figure{margin:32px 0}figure img{display:block;width:100%;border:1px solid #d9cdb
 .hero .byline{font-size:1.15rem;color:#62584d;margin-top:-12px;margin-bottom:28px}
 @media(max-width:781px){.hero{padding-top:44px}.hero>.wp-block-columns{gap:32px}.hero-note{border-radius:48px 48px 6px 6px}.section{padding-block:48px}.download{padding:32px 20px}.site-header{gap:12px}.site-footer{flex-direction:column}.wp-block-buttons{gap:12px}.wp-block-button{max-width:100%}.wp-block-button__link{white-space:normal}.feature-card{height:auto}.brand a{font-size:1.2rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.footer-links{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 24px}.footer-contact summary{color:#93462f;text-decoration:underline;text-underline-offset:.22em;cursor:pointer}.contact-info{max-width:340px;padding:16px;margin-top:12px;background:#eee6d9;border-radius:6px}.contact-info p{font-size:.85rem;overflow-wrap:anywhere}.contact-info p+p{margin-top:8px!important}
