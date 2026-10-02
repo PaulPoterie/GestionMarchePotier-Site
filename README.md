@@ -45,3 +45,8 @@ Les fichiers de la version WordPress, ses exports et l’installation Local sont
 Les captures d’accueil et d’historique proviennent des tests du 30 septembre 2026 ; les légendes signalent les anciennes versions et données de test. Les trois captures d’insertion de blocs ont été réalisées avec le plugin 0.19.3 le 1er octobre 2026. Le code du plugin et les autres installations WordPress n’ont pas été modifiés.
 
 Contact : paul@poterie-navarraise.info.
+
+## Dernière release automatique
+Le workflow vérifie toutes les heures (à la minute 17, avec un délai possible côté GitHub) la dernière release stable du dépôt du plugin. Il sélectionne uniquement le ZIP installable nommé poterie-navarraise-market-manager-VERSION.zip, puis reconstruit les trois liens et les versions affichées. Les préversions et archives Source code sont exclues. Une erreur API ou un ZIP absent fait échouer la construction et préserve le site déjà publié. Aucun fichier du dépôt du plugin n’est modifié.
+
+Pour publier immédiatement après une release : Actions → Publier le site statique → Run workflow. La construction locale sans réseau utilise site/release.json ; python tools/build-static.py --refresh-release utilise GitHub. Les captures et textes fonctionnels restent à actualiser manuellement si le plugin évolue. GitHub peut désactiver les workflows planifiés après 60 jours sans activité sur un dépôt public ; les réactiver dans Actions si nécessaire.
