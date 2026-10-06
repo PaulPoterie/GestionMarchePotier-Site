@@ -1,6 +1,6 @@
 # Gestion Marché Potier — site statique
 
-Site vitrine français du plugin **Poterie Navarraise Pottery Market Manager 0.19.3**, par Poterie Navarraise. Présentation, captures réelles, installation, FAQ et téléchargement depuis la release officielle du plugin. Le plugin est en cours de révision sur WordPress.org, sans approbation annoncée.
+Site vitrine français du plugin **Poterie Navarraise Pottery Market Manager 0.19.3**, par Poterie Navarraise. Présentation, captures réelles, installation, FAQ et téléchargement depuis la release officielle du plugin. Le plugin est approuvé et disponible sur https://fr.wordpress.org/plugins/poterie-navarraise-market-manager/. La traduction française de la fiche n’y est pas encore affichée.
 
 ## Modifier le site
 
@@ -47,6 +47,6 @@ Les captures d’accueil et d’historique proviennent des tests du 30 septembre
 Contact : paul@poterie-navarraise.info.
 
 ## Dernière release automatique
-Le workflow vérifie une fois par jour à 06 h 17 UTC (08 h 17 en France métropolitaine en été, 07 h 17 en hiver, avec un délai possible côté GitHub) la dernière release stable du dépôt du plugin. Il sélectionne uniquement le ZIP installable nommé poterie-navarraise-market-manager-VERSION.zip, puis reconstruit les trois liens et les versions affichées. Les préversions et archives Source code sont exclues. Une erreur API ou un ZIP absent fait échouer la construction et préserve le site déjà publié. Aucun fichier du dépôt du plugin n’est modifié.
+Le workflow vérifie une fois par jour à 06 h 17 UTC (08 h 17 en France métropolitaine en été, 07 h 17 en hiver, avec un délai possible côté GitHub) la dernière release stable du dépôt du plugin. Il sélectionne uniquement le ZIP installable nommé poterie-navarraise-market-manager-VERSION.zip, puis reconstruit les liens GitHub et les versions affichées. Les préversions et archives Source code sont exclues. Une erreur API ou un ZIP absent fait échouer la construction et préserve le site déjà publié. Aucun fichier du dépôt du plugin n’est modifié.
 
 Pour publier immédiatement après une release : Actions → Publier le site statique → Run workflow. La construction locale sans réseau utilise site/release.json ; python tools/build-static.py --refresh-release utilise GitHub. Les captures et textes fonctionnels restent à actualiser manuellement si le plugin évolue. GitHub peut désactiver les workflows planifiés après 60 jours sans activité sur un dépôt public ; les réactiver dans Actions si nécessaire.
