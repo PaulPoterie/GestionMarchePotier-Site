@@ -22,14 +22,14 @@ content = (SOURCE / 'accueil.html').read_text(encoding='utf-8')
 navigation = ''.join(f'<a href="#{anchor}">{label}</a>' for label, anchor in [
     ('Fonctionnalités', 'fonctionnalites'), ('Captures', 'captures'),
     ('Installation', 'installation'), ('FAQ', 'faq'), ('Télécharger', 'telechargement')])
-header = f'<header class="site-header"><p class="brand"><a href="./">Gestion Marché Potier<span class="brand-subtitle">par Poterie Navarraise</span></a></p><nav class="site-nav" aria-label="Navigation principale">{navigation}</nav></header>'
+header = f'<header class="site-header"><p class="brand"><a href="./">Gestion Marchés Potiers<span class="brand-subtitle">par Poterie Navarraise</span></a></p><nav class="site-nav" aria-label="Navigation principale">{navigation}</nav></header>'
 footer = '<footer class="site-footer"><p class="signature">fait par Poterie Navarraise</p><nav class="footer-links" aria-label="Liens de pied de page"><details class="footer-contact"><summary>Contact</summary><div class="contact-info"><p>Écrivez à <a href="mailto:paul@poterie-navarraise.info">paul@poterie-navarraise.info</a></p><p>Vous pouvez copier cette adresse dans votre messagerie.</p></div></details><a href="{{DOWNLOAD_URL}}">Téléchargement</a><a href="#installation">Installation</a></nav></footer>'
 page = f'''<!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gestion Marché Potier — par Poterie Navarraise</title>
+<title>Gestion Marchés Potiers — par Poterie Navarraise</title>
 <meta name="description" content="Organisez vos marchés potiers avec WordPress : éditions, candidatures, jury, historiques et galerie. Découvrez et téléchargez le plugin gratuit.">
 <meta name="theme-color" content="#93462f">
 <link rel="stylesheet" href="style.css?v={style_version}">

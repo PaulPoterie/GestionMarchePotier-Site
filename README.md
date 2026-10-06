@@ -1,4 +1,4 @@
-# Gestion Marché Potier — site statique
+# Gestion Marchés Potiers — site statique
 
 Site vitrine français du plugin **Poterie Navarraise Pottery Market Manager 0.19.3**, par Poterie Navarraise. Présentation, captures réelles, installation, FAQ et téléchargement depuis la release officielle du plugin. Le plugin est approuvé et disponible sur https://fr.wordpress.org/plugins/poterie-navarraise-market-manager/. La traduction française de la fiche n’y est pas encore affichée.
 
